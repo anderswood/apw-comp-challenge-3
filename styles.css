@@ -31,6 +31,7 @@ h3 {
 
 h4 {
   font-size: 12px;
+  color: #5E6679;
 }
 
 h5 {
@@ -41,12 +42,15 @@ h5 {
 
 p {
   display: inline-block;
+  font-size: 10px;
   margin: 0;
+  color: #87909C;
 }
 
 button {
   margin: 0 auto;
-  padding: 2px 10px 4px 10px;
+  padding: 2px 9px 4px 9px;
+  height: 30px;
 }
 
 /*-------XXXXXXXXXX-------*/
@@ -82,10 +86,53 @@ header {
   display: block;
 }
 
-/*-------XXXXXXXXXX-------*/
+/*-------NAV BAR-------*/
 
 nav {
-  background-color: #A74C26;
+  background-color: #c9af2c;
+}
+
+.nav-bar {
+  padding-left: 10px;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-left: -10px;
+  height: 90px;
+
+}
+
+.user-img {
+  background: url(images/drumpf.jpg) 40%;
+  background-size: cover;
+  width: 65px;
+  height:65px;
+  border-radius: 50%;
+}
+
+.user-box {
+  display: flex;
+  align-items: center;
+}
+
+.down-arrow {
+  margin-left: 4px;
+}
+
+.nav-list-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.nav-icon {
+  margin-right: 7px;
 }
 
 /*-------HEADER-------*/
@@ -167,8 +214,6 @@ header {
   margin: 10px 10px;
 }
 
-.
-
 /*-------CONTENT CONTAINER------*/
 
 .content-container {
@@ -196,11 +241,24 @@ header {
 .open-btn {
   display: inline-flex;
   align-items: center;
-  padding: 5px 5px 0 5px;
+  padding: 1px 5px 0 5px;
 }
 
-.job-buttons button {
-  padding: 5px 5px 0 5px;
+.job-buttons {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.job-button {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.round-button {
+  border-radius: 50%;
 }
 
 /*-----GRAPHICS CONTAINER-----*/
@@ -255,10 +313,7 @@ header {
 
 .graph-3-segment {
   border: 7px solid #E21C3B;
-  clip-path: polygon(50% 0, 50% 100%, 0 100%, 0 0);
-}
-
-.graph-1 h3 {
+  clip-path: polygon(100% 0, 100% 80%, 50% 50%, 50% 100%, 0 100%, 0 0);
 }
 
 button {
@@ -269,10 +324,13 @@ button {
 }
 
 .bar-graph {
-  width: 200px;
-  height: 150px;
+  /*width: 200px;
+  height: 150px;*/
 }
 
+.bar-graph-icon {
+  margin-top: 20px;
+}
 
 /*-------DETAILS CONTAINER-------*/
 
@@ -280,18 +338,160 @@ button {
   margin: 10px 10px;
 }
 
+.job-description {
+  background-color: #FFFFFF;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.table-header {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  background: #F1D336;
+}
+
+.edit-box {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  background: #eddc87;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.left-col, .left-col-head {
+  width: 100px;
+  padding: 10px 5px;
+}
+
+.table-div {
+  padding: 0 20px;
+  background: #FFFFFF;
+}
+
+td, th {
+  text-align: left;
+  vertical-align: top;
+}
+
+td {
+  background: #FFFFFF;
+  padding: 10px 5px;
+}
+
+tr {
+  border-bottom: 1px solid gray;
+}
+
+thead tr {
+  border-bottom: none;
+}
+
 .extra-links {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .social-media-links {
-  text-align: center;
-
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+
 }
 
+.facebook {
+  background: #3B5998;
+}
+
+.twitter {
+  background: #1DA1F2;
+}
+
+.linkedin {
+  background: #0077B5;
+}
+
+.social-media-text {
+  display: none;
+  color: #FFFFFF;
+}
+
+.extra-info-1, .extra-info-2, .extra-info-3 {
+  max-width: 350px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #87909C;
+  margin: 0 auto;
+}
+
+.extra-info-1 {
+  padding-top: 15px;
+}
+
+.extra-info-3 {
+  border-bottom: none;
+}
+
+.extra-info-header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 8px;
+}
+
+.extra-info-header h2 {
+  color: #5E6679;
+  padding-left: 5px;
+}
+
+.link-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  margin-top: 15px;
+  box-shadow: 0 0 1px #5E6679;
+}
+
+.link-text, .link-copy {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.link-text {
+  justify-content: flex-start;
+  background-color: #FFFFFF;
+  min-width: 0;
+  padding: 0 7px;
+}
+
+.link-text p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.link-copy {
+  justify-content: center;
+  min-width: 50px;
+  padding: 0 4px;
+  background-color: #0599DB;
+}
+
+.link-copy h4 {
+  color: #FFFFFF;
+  margin: 0;
+}
 
 
 /*-------borders to be deleted-------*/
@@ -324,7 +524,7 @@ button {
   .search-box {
     display: inline-flex;
     align-items: center;
-    width: 280px;
+    width: 250px;
     border: none;
   }
 
@@ -333,19 +533,30 @@ button {
     float: right;
   }
 
-  .graph-1, .graph-2, .graph-3 {
-    margin: 0 1.25%;
-  }
-
   .graph-1, .graph-1-segment, .graph-2, .graph-2-segment, .graph-3, .graph-3-segment {
     width: 125px;
     height: 125px;
   }
 
+  .social-media-links {
+    display: block;
+  }
+
+  .social-media-text {
+    display: inline-block;
+    padding-left: 20px;
+  }
+
+  .social-media {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto 10px auto;
+  }
+
 }
 
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 700px) {
 
   body {
     display: flex;
@@ -356,31 +567,94 @@ button {
     min-width: 125px;
   }
 
+  .job-sub-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .details-container {
+    box-sizing: border-box;
+    display: flex;
+  }
+
+  .job-description {
+    box-sizing: border-box;
+    width: 60%;
+  }
+
+  .extra-links {
+    box-sizing: border-box;
+    width: 40%;
+    margin-top: 0;
+    padding: 0 15px;
+  }
+
+  .social-media-links {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .extra-info-1, .extra-info-2, .extra-info-3 {
+    max-width: 300px;
+  }
+
+
+}
+
+@media screen and (min-width: 850px) {
+
+
+
   .job-container, .graphics-container, .details-container {
     margin: 10px 30px;
   }
 
-  .graph-1, .graph-2, .graph-3 {
+  .graphics-container {
+    display: flex;
+    /*flex-wrap: wrap;*/
+  }
+
+
+  .circle-graphs, .bar-graph {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  /*.graph-1, .graph-2, .graph-3 {
     margin: 0 1.25%;
+    border: 12px solid #D0D8DC;
+    margin: 0 0.5%;
+  }
+
+  .graph-1-segment, .graph-2-segment, .graph-3-segment {
+    top: -12px;
+    left: -12px;
+  }
+
+  .graph-1-segment {
+    border: 12px solid #F58521;
+  }
+
+  .graph-2-segment {
+    border: 12px solid #0599DB;
+  }
+
+  .graph-3-segment {
+    border: 12px solid #E21C3B;
   }
 
   .graph-1, .graph-1-segment, .graph-2, .graph-2-segment, .graph-3, .graph-3-segment {
-    width: 145px;
-    height: 145px;
-  }
+    width: 165px;
+    height: 165px;
+  }*/
 
   h5 {
     font-size: 30px;
   }
 
-
-  /*.job-buttons {
-    float: right;
-  }*/
-
   main {
     display: inline-block;
   }
-
 
 }

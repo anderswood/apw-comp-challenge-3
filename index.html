@@ -13,24 +13,57 @@
   <body>
     <nav>
       <section class="nav-bar user">
-        <img alt="profile picture of user"></img>
-        <h2>User name</h2>
+        <div class="user-img" alt="profile picture of user"></div>
+        <div class="user-box">
+          <h3 class="user-name">Donald Drumpf</h3>
+          <img class="down-arrow" width="8px" src="icons/nav-bar/angle-arrow-down.svg" alt="navigation icon"></img>
+        </div>
       </section>
       <section class="nav-bar main">
         <h4>Main</h4>
-        <h3>HOME</h3>
-        <h3>JOBS</h3>
-        <h3>RESUMES</h3>
-        <h3>TASKS</h3>
-        <h3>CALENDAR</h3>
+        <div class="nav-list-box">
+          <img class="nav-icon" width="12px" src="icons/nav-bar/tools.svg" alt="navigation icon"></img>
+          <h3>HOME</h3>
+        </div>
+        <div class="nav-list-box">
+          <img class="nav-icon" width="12px" src="icons/nav-bar/target.svg" alt="navigation icon"></img>
+          <h3>JOBS</h3>
+        </div>
+        <div class="nav-list-box">
+          <img class="nav-icon" width="12px" src="icons/nav-bar/portfolio.svg" alt="navigation icon"></img>
+          <h3>RESUMES</h3>
+        </div>
+        <div class="nav-list-box">
+          <img class="nav-icon" width="12px" src="icons/nav-bar/phone.svg" alt="navigation icon"></img>
+          <h3>TASKS</h3>
+        </div>
+        <div class="nav-list-box">
+          <img class="nav-icon" width="12px" src="icons/nav-bar/mountain.svg" alt="navigation icon"></img>
+          <h3>CALENDAR</h3>
+        </div>
       </section>
       <section class="nav-bar admin">
         <h4>Admin</h4>
-        <h3>USERS</h3>
-        <h3>LOCATIONS</h3>
-        <h3>WORKFLOWS</h3>
-        <h3>JOB BOARDS</h3>
-        <h3>SOCIAL</h3>
+        <div class="nav-list-box">
+          <img class="nav-icon" width="12px" src="icons/nav-bar/medal.svg" alt="navigation icon"></img>
+          <h3>USERS</h3>
+        </div>
+        <div class="nav-list-box">
+          <img class="nav-icon" width="12px" src="icons/nav-bar/list.svg" alt="navigation icon"></img>
+          <h3>LOCATIONS</h3>
+        </div>
+        <div class="nav-list-box">
+          <img class="nav-icon" width="12px" src="icons/nav-bar/idea.svg" alt="navigation icon"></img>
+          <h3>WORKFLOWS</h3>
+        </div>
+        <div class="nav-list-box">
+          <img class="nav-icon" width="12px" src="icons/nav-bar/hard-hat.svg" alt="navigation icon"></img>
+          <h3>JOB BOARDS</h3>
+        </div>
+        <div class="nav-list-box">
+          <img class="nav-icon" width="12px" src="icons/nav-bar/contract.svg" alt="navigation icon"></img>
+          <h3>SOCIAL</h3>
+        </div>
       </section>
       <section class="nav-bar categories">
         <h4>Categories</h4>
@@ -63,26 +96,28 @@
           </div>
       </header>
       <section class="job-container">
-        <div class="job-title">
-          <h1>Customer Service Representative</h1>
-          <svg class="pin" width="12px" fill="#87909C" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><g><path d="M50,5.7c-15.7,0-28.5,12.8-28.5,28.5C21.5,56.5,50,94.3,50,94.3s28.5-38,28.5-60.2C78.5,18.4,65.7,5.7,50,5.7z M50,49.8   c-8.8,0-16-7.2-16-16c0-8.8,7.2-16,16-16c8.8,0,16,7.2,16,16C66,42.6,58.8,49.8,50,49.8z"></path></g></svg>
-          <h3>San Francisco, CA -</h3>
-          <h3 class="h3-link">Preview this post</h3>
-        </div>
-        <div class="job-buttons">
-          <button class="open-btn">
+        <div class="job-sub-container">
+          <div class="job-title">
+            <h1>Customer Service Representative</h1>
+            <svg class="pin" width="12px" fill="#87909C" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><g><path d="M50,5.7c-15.7,0-28.5,12.8-28.5,28.5C21.5,56.5,50,94.3,50,94.3s28.5-38,28.5-60.2C78.5,18.4,65.7,5.7,50,5.7z M50,49.8   c-8.8,0-16-7.2-16-16c0-8.8,7.2-16,16-16c8.8,0,16,7.2,16,16C66,42.6,58.8,49.8,50,49.8z"></path></g></svg>
+            <h3>San Francisco, CA -</h3>
+            <h3 class="h3-link">Preview this post</h3>
+          </div>
+          <div class="job-buttons">
+          <button class="open-btn job-button">
             <div class="open-circle"></div>
             <h3>OPEN</h3>
           </button>
-          <button>
-            <img class="job-icon" width="18px" src="icons/bookmark.svg" alt="bookmark icon">
+          <button class="job-button round-button">
+            <img class="job-icon" width="14px" src="icons/bookmark.svg" alt="bookmark icon">
           </button>
-          <button>
-            <img class="job-icon" width="18px" src="icons/edit.svg" alt="edit icon">
+          <button class="job-button round-button">
+            <img class="job-icon" width="14px" src="icons/edit.svg" alt="edit icon">
           </button>
-          <button>
-            <img class="job-icon" width="18px" src="icons/tower.svg" alt="tower icon">
+          <button class="job-button round-button">
+            <img class="job-icon" width="14px" src="icons/tower.svg" alt="tower icon">
           </button>
+        </div>
         </div>
         <div class="job-menu">
           <div class="job-menu-item"><h3>SUMMARY</h3></div>
@@ -120,77 +155,119 @@
             <button class="graph-btn"><h3>TOTALS - Out of 4,345 views</h3></button>
           </div>
           <div class="bar-graph">
-            <div class="graph bar-graph"></div>
+            <div class="graph bar-graph">
+              <img class="bar-graph-icon" src="icons/bar-graph.png" alt="bar graph" width="200px" height="100px"></img>
+            </div>
             <button class="graph-btn"><h3>APPLICANTS/DAY</h3></button>
           </div>
         </article>
         <section class="details-container">
           <article class="job-description">
-            <table>
-              <thead>
-                <tr>
-                  <th>JOB DESCRIPTION</th>
-                  <th>edit button</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th><h3>POSITION TITLE</h3></th>
-                  <td><p>Customer Service Rep</p></td>
-                </tr>
-                <tr>
-                  <th><h3>LOCATION</h3></th>
-                  <td><p>San Francisco, CA</p></td>
-                </tr>
-                <tr>
-                  <th><h3>EMPLOYMENT TYPE</h3></th>
-                  <td><p>Full-time</p></td>
-                </tr>
-                <tr>
-                  <th><h3>EXPERIENCE</h3></th>
-                  <td><p>Mid-level</p></td>
-                </tr>
-                <tr>
-                  <th><h3>STATUS</h3></th>
-                  <td><p>Open</p></td>
-                </tr>
-                <tr>
-                  <th><h3>DESCRIPTION</h3></th>
-                  <td><p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.</p></td>
-                </tr>
-                <tr>
-                  <th><h3>HIRING LEAD</h3></th>
-                  <td><p>Tom Tizzy</p></td>
-                </tr>
-                <tr>
-                  <th><h3>APPROVED SALARY</h3></th>
-                  <td><p>$58,000</p></td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-header">
+              <h3 class="left-col-head">JOB DESCRIPTION</h3>
+              <div class="edit-box">
+                <img class="edit-icon" width="14px" src="icons/edit.svg" alt="edit icon">
+                <h3>EDIT</h3>
+              </div>
+            </div>
+            <div class="table-div">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="left-col"><h3>POSITION TITLE</h3></td>
+                    <td class="right-col"><p>Customer Service Rep</p></td>
+                  </tr>
+                  <tr>
+                    <td class="left-col"><h3>LOCATION</h3></th>
+                    <td class="right-col"><p>San Francisco, CA</p></td>
+                  </tr>
+                  <tr>
+                    <td class="left-col"><h3>EMPLOYMENT TYPE</h3></td>
+                    <td class="right-col"><p>Full-time</p></td>
+                  </tr>
+                  <tr>
+                    <td class="left-col"><h3>EXPERIENCE</h3></td>
+                    <td class="right-col"><p>Mid-level</p></td>
+                  </tr>
+                  <tr>
+                    <td class="left-col"><h3>STATUS</h3></td>
+                    <td class="right-col"><p>Open</p></td>
+                  </tr>
+                  <tr>
+                    <td class="left-col"><h3>DESCRIPTION</h3></td>
+                    <td class="right-col"><p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.</p></td>
+                  </tr>
+                  <tr>
+                    <td class="left-col"><h3>HIRING LEAD</h3></td>
+                    <td class="right-col"><p>Tom Tizzy</p></td>
+                  </tr>
+                  <tr>
+                    <td class="left-col"><h3>APPROVED SALARY</h3></td>
+                    <td class="right-col"><p>$58,000</p></td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
           </article>
           <aside class="extra-links">
             <div class="social-media-links">
-              <button class="social-media facebook">icon</button>
-              <button class="social-media twitter">icon</button>
-              <button class="social-media linkedin">icon</button>
+              <div class="social-media facebook">
+                <img src="icons/facebook.svg" width="18px" alt="facebook icon"></img>
+                <h3 class="social-media-text">Post to Facebook</h3>
+              </div>
+              <div class="social-media twitter">
+                <img src="icons/twitter.svg" width="18px" alt="twitter icon"></img>
+                <h3 class="social-media-text">Tweet this job</h3>
+              </div>
+              <div class="social-media linkedin">
+                <img src="icons/linkedin.svg" width="18px" alt="linked-in icon"></img>
+                <h3 class="social-media-text">Post to LinkedIn</h3>
+              </div>
             </div>
             <div class="extra-info-1">
-              <h2>Link to this job</h2>
+              <div class="extra-info-header">
+                <img src="icons/world.svg" width="18px" alt="world icon"></img>
+                <h2>Link to this job</h2>
+              </div>
               <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men.</p>
-              <div>link</div>
-              <div>copy</div>
+              <div class="link-container">
+                <div class="link-text">
+                  <p>lhttps://en.wikipedia.org/wiki/Donald_Trump_(Last_Week_Tonight)</p>
+                </div>
+                <div class="link-copy">
+                  <h4>Copy</h4>
+                </div>
+              </div>
             </div>
             <div class="extra-info-2">
-              <h2>Use the Button Widget</h2>
+              <div class="extra-info-header">
+                <img src="icons/binoculars.svg" width="18px" alt="world icon"></img>
+                <h2>Use the Button Widget</h2>
+              </div>
               <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men.</p>
-              <div>link</div>
-              <div>copy</div>
+              <div class="link-container">
+                <div class="link-text">
+                  <p>https://thenounproject.com/made.somewhere/collection/graph/?oq=bar%20graph&cidx=3&i=876050</p>
+                </div>
+                <div class="link-copy">
+                  <h4>Copy</h4>
+                </div>
+              </div>
             </div>
             <div class="extra-info-3">
-              <h2>Upload Resumes by Email</h2>
+              <div class="extra-info-header">
+                <img src="icons/plane.svg" width="18px" alt="world icon"></img>
+                <h2>Upload Resumes by Email</h2>
+              </div>
               <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men.</p>
-              <div>link</div>
+              <div class="link-container">
+                <div class="link-text">
+                  <p>http://avalanche.state.co.us/forecasts/backcountry-avalanche/front-range/</p>
+                </div>
+                <div class="link-copy">
+                  <h4>Copy</h4>
+                </div>
+              </div>
             </div>
           </aside>
         </section>
