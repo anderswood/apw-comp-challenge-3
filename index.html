@@ -20,7 +20,7 @@
         </div>
       </section>
       <section class="nav-bar main">
-        <h4>Main</h4>
+        <h4 class="nav-title">Main</h4>
         <div class="nav-list-box">
           <img class="nav-icon" width="12px" src="icons/nav-bar/tools.svg" alt="navigation icon"></img>
           <h3>HOME</h3>
@@ -43,7 +43,7 @@
         </div>
       </section>
       <section class="nav-bar admin">
-        <h4>Admin</h4>
+        <h4 class="nav-title">Admin</h4>
         <div class="nav-list-box">
           <img class="nav-icon" width="12px" src="icons/nav-bar/medal.svg" alt="navigation icon"></img>
           <h3>USERS</h3>
@@ -66,11 +66,23 @@
         </div>
       </section>
       <section class="nav-bar categories">
-        <h4>Categories</h4>
-        <h4>Administrative</h4>
-        <h4>Design</h4>
-        <h4>Executive</h4>
-        <h4>Human Resources</h4>
+        <h4 class="nav-title">Categories</h4>
+        <div class="nav-list-box">
+          <div class="nav-icon-div admin-box"></div>
+          <h4>Administrative</h4>
+        </div>
+        <div class="nav-list-box">
+          <div class="nav-icon-div design"></div>
+          <h4>Design</h4>
+        </div>
+        <div class="nav-list-box">
+          <div class="nav-icon-div exec"></div>
+          <h4>Executive</h4>
+        </div>
+        <div class="nav-list-box">
+          <div class="nav-icon-div hr"></div>
+          <h4>Human Resources</h4>
+        </div>
       </section>
     </nav>
     <main>
@@ -120,10 +132,20 @@
         </div>
         </div>
         <div class="job-menu">
-          <div class="job-menu-item"><h3>SUMMARY</h3></div>
-          <div class="job-menu-item"><h3>APPLICANTS</h3></div>
-          <div class="job-menu-item"><h3>JOB BOARD</h3></div>
-          <div class="job-menu-item"><h3>INTERVIEWS</h3></div>
+          <div class="job-menu-item">
+            <h3 class="first-job-menu-item">SUMMARY</h3>
+          </div>
+          <div class="job-menu-item job-menu-long">
+            <h3>APPLICANTS JOB-BOARD INTERVIEWS ACTIVITY BROADCAST NOTIFICATIONS</h3>
+            <div class="right-filler"></div>
+            <img class="right-arrow" width="8px" src="icons/angle-arrow-right.svg" alt="navigation icon"></img>
+          </div>
+          <div class="job-menu-item job-menu-item-desktop"><h3>APPLICANTS</h3></div>
+          <div class="job-menu-item job-menu-item-desktop"><h3>JOB BOARD</h3></div>
+          <div class="job-menu-item job-menu-item-desktop"><h3>INTERVIEWS</h3></div>
+          <div class="job-menu-item job-menu-item-desktop"><h3>ACTIVITY</h3></div>
+          <div class="job-menu-item job-menu-item-desktop"><h3>BROADCAST</h3></div>
+          <div class="job-menu-item job-menu-item-desktop"><h3>NOTIFICATIONS</h3></div>
         </div>
       </section>
       <section class="content-container">
@@ -166,7 +188,7 @@
             <div class="table-header">
               <h3 class="left-col-head">JOB DESCRIPTION</h3>
               <div class="edit-box">
-                <img class="edit-icon" width="14px" src="icons/edit.svg" alt="edit icon">
+                <img class="edit-icon" width="14px" src="icons/edit-white.svg" alt="edit icon">
                 <h3>EDIT</h3>
               </div>
             </div>

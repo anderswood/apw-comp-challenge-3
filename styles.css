@@ -31,6 +31,7 @@ h3 {
 
 h4 {
   font-size: 12px;
+  margin: 2px;
   color: #5E6679;
 }
 
@@ -89,11 +90,16 @@ header {
 /*-------NAV BAR-------*/
 
 nav {
-  background-color: #c9af2c;
+  background-color: #354052;
 }
 
 .nav-bar {
-  padding-left: 10px;
+  border-bottom: 2px solid #2D384A;
+  padding: 12px 0 8px 10px;
+}
+
+nav section:last-child {
+  border-bottom: none;
 }
 
 .user {
@@ -101,10 +107,10 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  margin-top: 15px;
+  margin-top: 5px;
   margin-left: -10px;
+  padding-bottom: 18px;
   height: 90px;
-
 }
 
 .user-img {
@@ -131,9 +137,28 @@ nav {
   margin-bottom: 10px;
 }
 
-.nav-icon {
+.nav-icon, .nav-icon-div {
   margin-right: 7px;
 }
+
+.nav-title {
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.nav-icon-div {
+  width: 10px;
+  height: 10px;
+}
+
+.nav-list-box h4 {
+  color: #87909C;
+}
+
+.admin-box { background-color: #F1D336;}
+.design { background-color: #0599DB;}
+.exec { background-color: #E21C3B;}
+.hr { background-color: #F58521;}
 
 /*-------HEADER-------*/
 
@@ -182,7 +207,6 @@ header {
   align-items: center;
   justify-content: flex-start;
   border-top: 1px solid #D0D8DC;
-  /*border: 1px dotted gray;*/
   width: 100%;
   height: 40px;
   order: 1;
@@ -211,8 +235,61 @@ header {
 }
 
 .job-container {
-  margin: 10px 10px;
+  margin: 10px 10px 0 10px;
 }
+
+.job-menu {
+  min-width: 0;
+  display: flex;
+  /*align-items: center;*/
+  justify-content: flex-start;
+  margin-top: 15px;
+  height: 35px;
+}
+
+.job-menu-long {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  min-width: 0;
+}
+
+.first-job-menu-item {
+  display: block;
+  padding: 10px 0;
+}
+
+.job-menu-long h3{
+  word-spacing: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-left: 10px;
+}
+
+.right-filler {
+  position: absolute;
+  right: 0;
+  width: 45px;
+  height: 100%;
+  background:linear-gradient(-90deg, #354052, #FFFFFF);
+  opacity: .4;
+}
+
+.right-arrow {
+  position: absolute;
+  right: 4px;
+  transform: rotate(-90deg);
+  border-radius: 50%;
+  border: 1px solid #AEB4BB;
+  padding: 3px;
+  background: #FFFFFF;
+}
+
+.job-menu-item-desktop {
+  display: none
+}
+
 
 /*-------CONTENT CONTAINER------*/
 
@@ -264,7 +341,8 @@ header {
 /*-----GRAPHICS CONTAINER-----*/
 
 .graphics-container {
-  margin: 10px 10px;
+  margin: 0 10px 10px 10px;
+  padding-top: 20px;
   text-align: center;
 }
 
@@ -350,21 +428,29 @@ table {
   display: flex;
   align-items: center;
   padding: 0 20px;
-  background: #F1D336;
+  background: #6F7E95;
 }
 
 .edit-box {
   display: flex;
   align-items: center;
   height: 20px;
-  background: #eddc87;
+  background: #7C8CA6;
   padding-left: 5px;
   padding-right: 5px;
 }
 
+.edit-box h3 {
+  color: #FFFFFF;
+}
+
 .left-col, .left-col-head {
   width: 100px;
-  padding: 10px 5px;
+  padding: 10px 5px 10px 0;
+}
+
+.left-col-head {
+  color: #FFFFFF;
 }
 
 .table-div {
@@ -383,7 +469,7 @@ td {
 }
 
 tr {
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #AEB4BB;
 }
 
 thead tr {
@@ -533,6 +619,29 @@ thead tr {
     float: right;
   }
 
+  .job-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .job-menu .job-menu-item:first-of-type {
+    padding-top: 3px;
+  }
+
+  .job-menu-item {
+    display: block;
+  }
+
+  .job-menu-long {
+    display: none;
+  }
+
+  .first-job-menu-item {
+    display: block;
+    padding: 0;
+  }
+
   .graph-1, .graph-1-segment, .graph-2, .graph-2-segment, .graph-3, .graph-3-segment {
     width: 125px;
     height: 125px;
@@ -603,15 +712,16 @@ thead tr {
 
 @media screen and (min-width: 850px) {
 
+  .graphics-container, .details-container {
+    margin: 0 30px 10px 30px;
+  }
 
-
-  .job-container, .graphics-container, .details-container {
-    margin: 10px 30px;
+  .job-container {
+    margin: 10px 30px 0 30px;
   }
 
   .graphics-container {
     display: flex;
-    /*flex-wrap: wrap;*/
   }
 
 
