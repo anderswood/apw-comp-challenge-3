@@ -10,7 +10,7 @@ main {
 }
 
 h1 {
-  font-size: 22px;
+  font-size: 21px;
   color: #5E6679;
   margin-bottom: 3px;
 }
@@ -54,48 +54,17 @@ button {
   height: 30px;
 }
 
-/*-------XXXXXXXXXX-------*/
-
-
-
-/*-------Display-------*/
-
-nav {
-  display: none;
-}
-
-.job-menu-item, .graph, .bar-graph {
-  display: inline-block;
-  box-sizing: border-box;
-}
-
-.hamburger-box {
-  /*display: flex;*/
-}
-
-header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.three-icons-box {
-  display: flex;
-}
-
-.graph-btn {
-  display: block;
-}
 
 /*-------NAV BAR-------*/
 
 nav {
+  display: none;
   background-color: #354052;
 }
 
 .nav-bar {
   border-bottom: 2px solid #2D384A;
-  padding: 12px 0 8px 10px;
+  padding: 12px 0 8px 0;
 }
 
 nav section:last-child {
@@ -108,7 +77,6 @@ nav section:last-child {
   align-items: center;
   justify-content: space-between;
   margin-top: 5px;
-  margin-left: -10px;
   padding-bottom: 18px;
   height: 90px;
 }
@@ -119,6 +87,12 @@ nav section:last-child {
   width: 65px;
   height:65px;
   border-radius: 50%;
+  box-shadow: 0 0 5px #2D384A;
+}
+
+.user-img:hover {
+  background: url(images/drumpf2.jpg) no-repeat 50% 0%;
+  background-size: 250%;
 }
 
 .user-box {
@@ -134,7 +108,9 @@ nav section:last-child {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-bottom: 10px;
+  box-sizing: border-box;
+  padding: 5px 0 5px 10px;
+  border-left: 2px solid #354052;
 }
 
 .nav-icon, .nav-icon-div {
@@ -142,6 +118,7 @@ nav section:last-child {
 }
 
 .nav-title {
+  margin: 12px 0 8px 10px;
   margin-top: 12px;
   margin-bottom: 8px;
 }
@@ -160,31 +137,22 @@ nav section:last-child {
 .exec { background-color: #E21C3B;}
 .hr { background-color: #F58521;}
 
+.nav-list-box:hover {
+  background-color: #2D384A;
+  border-left: 2px solid #F58521;
+}
+
+
 /*-------HEADER-------*/
 
-/*colors*/
-/*
-#E21C3B;
-#0599DB;
-#F1D336;
-#F58521;
-#A74C26;
-#5E6679;
-#87909C;
-#A1A9B4;
-#AEB4BB;
-#D0D8DC;
-#F3F4F7;
-#EDF2F6;
-#FFFEFF;
-*/
-
 header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   border: 1px solid #D0D8DC;
 }
 
 .header-box {
-  /*border: 1px dotted gray;*/
   display: flex;
   align-items: center;
   justify-content: center;
@@ -199,6 +167,7 @@ header {
 }
 
 .three-icons-box {
+  display: flex;
   box-sizing: border-box;
 }
 
@@ -214,7 +183,7 @@ header {
 }
 
 .mag-glass {
-  margin-left: 11px;
+  margin-left: 15px;
   margin-right: 5px;
 }
 
@@ -235,14 +204,20 @@ header {
 }
 
 .job-container {
-  margin: 10px 10px 0 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 10px;
+}
+
+.job-menu-item {
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 .job-menu {
   min-width: 0;
   display: flex;
-  /*align-items: center;*/
-  justify-content: flex-start;
   margin-top: 15px;
   height: 35px;
 }
@@ -253,11 +228,15 @@ header {
   justify-content: flex-start;
   position: relative;
   min-width: 0;
+  border-bottom: 3px solid #FFFFFF;
+}
+
+.job-menu-item-1 {
+  border-bottom: 3px solid #F58521;
 }
 
 .first-job-menu-item {
-  display: block;
-  padding: 10px 0;
+  color: #5E6679;
 }
 
 .job-menu-long h3{
@@ -290,12 +269,6 @@ header {
   display: none
 }
 
-
-/*-------CONTENT CONTAINER------*/
-
-.content-container {
-  background-color: #EDF2F6;
-}
 
 /*-------JOB CONTAINER------*/
 
@@ -338,10 +311,21 @@ header {
   border-radius: 50%;
 }
 
+
+/*-------CONTENT CONTAINER------*/
+
+.content-container {
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #EDF2F6;
+  border-top: 1px solid #D0D8DC;
+}
+
+
 /*-----GRAPHICS CONTAINER-----*/
 
 .graphics-container {
-  margin: 0 10px 10px 10px;
+  margin-bottom: 10px;
   padding-top: 20px;
   text-align: center;
 }
@@ -355,6 +339,11 @@ header {
   justify-content: space-around;
   align-items: center;
   margin-bottom: 20px;
+}
+
+.graph, .bar-graph {
+  display: inline-block;
+  box-sizing: border-box;
 }
 
 .graph-1, .graph-1-segment, .graph-2, .graph-2-segment, .graph-3, .graph-3-segment {
@@ -394,6 +383,10 @@ header {
   clip-path: polygon(100% 0, 100% 80%, 50% 50%, 50% 100%, 0 100%, 0 0);
 }
 
+.graph-btn {
+  display: block;
+}
+
 button {
   background-color: #FFFEFF;
   border: 1px solid #D0D8DC;
@@ -402,22 +395,54 @@ button {
 }
 
 .bar-graph {
-  /*width: 200px;
-  height: 150px;*/
+  margin-top: 20px;
+}
+
+.bar-graph-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .bar-graph-icon {
-  margin-top: 20px;
+  width: 85%;
+  height: 100px;
 }
+
+
+/*-------DIVIDER LINE-------*/
+
+.divider-line-container {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.divider-line {
+  display: inline-block;
+  width: 44%;
+  }
+
+.up-arrow {
+  transform: rotate(180deg);
+  border-radius: 50%;
+  border: 1px solid #AEB4BB;
+  padding: 3px;
+  background: #FFFEFF;
+}
+
 
 /*-------DETAILS CONTAINER-------*/
 
 .details-container {
-  margin: 10px 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .job-description {
   background-color: #FFFFFF;
+  box-shadow: 0 0 1px #7C8CA6;
 }
 
 table {
@@ -476,6 +501,32 @@ thead tr {
   border-bottom: none;
 }
 
+.last-tr {
+  border-bottom: none;
+}
+
+.vlad-cell {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.vlad-text {
+  margin-left: 10px;
+}
+
+.putin {
+  background: url(images/putin.jpg) no-repeat 60% 6%;
+  background-size: 160%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.bold-salary {
+  font-weight: 600;
+}
+
 .extra-links {
   margin-top: 20px;
 }
@@ -492,7 +543,7 @@ thead tr {
   justify-content: center;
   width: 45px;
   height: 45px;
-
+  box-shadow: 0 0 1px #7C8CA6
 }
 
 .facebook {
@@ -545,7 +596,7 @@ thead tr {
   justify-content: center;
   height: 25px;
   margin-top: 15px;
-  box-shadow: 0 0 1px #5E6679;
+  box-shadow: 0 0 1px #7C8CA6;
 }
 
 .link-text, .link-copy {
@@ -580,11 +631,11 @@ thead tr {
 }
 
 
-/*-------borders to be deleted-------*/
+/*-------borders to outline containers-------*/
 
-/*nav { border: 4px solid orange;}*/
-/*header { border: 4px solid red;}*/
-/*.job-container { border: 4px solid red;}*/
+/*nav { border: 4px solid orange;}
+header { border: 4px solid red;}
+.job-container { border: 4px solid red;}
 .job-title { border: 1px solid magenta;}
 .job-buttons { border: 1px solid orange;}
 .job-menu { border: 1px solid green;}
@@ -594,13 +645,26 @@ thead tr {
 .bar-graphs { border: 1px solid purple;}
 .details-container { border: 1px solid blue;}
 .job-description { border: 1px solid violet;}
-.extra-links { border: 1px solid purple;}
+.extra-links { border: 1px solid purple;}*/
 
+/*-------------------------------------------*/
 
 @media screen and (min-width: 450px) {
 
   header {
     display: block;
+  }
+
+  .job-container {
+    margin: 30px 20px 0 20px;
+  }
+
+  .graphics-container, .divider-line-container {
+    margin: 15px 20px 0 20px;
+  }
+
+  .details-container {
+    margin: 15px 30px 0 30px;
   }
 
   .hamburger-box {
@@ -625,12 +689,14 @@ thead tr {
     justify-content: space-around;
   }
 
-  .job-menu .job-menu-item:first-of-type {
-    padding-top: 3px;
+  .job-menu-item {
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
   }
 
-  .job-menu-item {
-    display: block;
+  .job-menu-item, .job-menu-item-1 {
+    border-bottom: 3px solid #FFFFFF;
   }
 
   .job-menu-long {
@@ -638,8 +704,16 @@ thead tr {
   }
 
   .first-job-menu-item {
-    display: block;
+    color: #87909C;
     padding: 0;
+  }
+
+  .job-menu-item:hover {
+    border-bottom: 3px solid #F58521;
+  }
+
+  .job-menu-item:hover h3 {
+    color: #5E6679;
   }
 
   .graph-1, .graph-1-segment, .graph-2, .graph-2-segment, .graph-3, .graph-3-segment {
@@ -661,7 +735,6 @@ thead tr {
     max-width: 350px;
     margin: 0 auto 10px auto;
   }
-
 }
 
 
@@ -673,7 +746,7 @@ thead tr {
 
   nav {
     display: inline-block;
-    min-width: 125px;
+    min-width: 145px;
   }
 
   .job-sub-container {
@@ -695,7 +768,7 @@ thead tr {
     box-sizing: border-box;
     width: 40%;
     margin-top: 0;
-    padding: 0 15px;
+    padding: 0 15px 0 20px;
   }
 
   .social-media-links {
@@ -706,14 +779,19 @@ thead tr {
   .extra-info-1, .extra-info-2, .extra-info-3 {
     max-width: 300px;
   }
-
-
 }
 
 @media screen and (min-width: 850px) {
 
-  .graphics-container, .details-container {
-    margin: 0 30px 10px 30px;
+  .graphics-container {
+    margin: 15px 30px 0 30px;
+  }
+
+  .details-container {
+    max-width: 1100px;
+    padding: 0 30px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .job-container {
@@ -724,40 +802,24 @@ thead tr {
     display: flex;
   }
 
-
   .circle-graphs, .bar-graph {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
-  /*.graph-1, .graph-2, .graph-3 {
-    margin: 0 1.25%;
-    border: 12px solid #D0D8DC;
-    margin: 0 0.5%;
+  .circle-graphs {
+    width: 60%;
   }
 
-  .graph-1-segment, .graph-2-segment, .graph-3-segment {
-    top: -12px;
-    left: -12px;
+  .bar-graph {
+    margin-top: 0;
+    width: 40%;
   }
 
-  .graph-1-segment {
-    border: 12px solid #F58521;
+  .extra-links {
+    padding: 0 15px 0 30px;
   }
-
-  .graph-2-segment {
-    border: 12px solid #0599DB;
-  }
-
-  .graph-3-segment {
-    border: 12px solid #E21C3B;
-  }
-
-  .graph-1, .graph-1-segment, .graph-2, .graph-2-segment, .graph-3, .graph-3-segment {
-    width: 165px;
-    height: 165px;
-  }*/
 
   h5 {
     font-size: 30px;
@@ -766,5 +828,4 @@ thead tr {
   main {
     display: inline-block;
   }
-
 }
